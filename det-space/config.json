@@ -1,0 +1,50 @@
+{
+    "inherit"            : false,
+    "cookie-session.life": 2678400,
+    "router.ssl"         : true,
+    "router.hosts"       : "test.com/det-admin",
+    "router.url"         : "test.com/det-admin",
+    "router.preferred"   : "permalink,common",
+    "router.page"        : "index",
+    "cache.host"         : "localhost",
+    "cache.port"         : 11211,
+    "cache.prefix"       : true,
+    "database.config"    : "mysql:host=localhost;dbname=test",
+    "database.user"      : "test",
+    "database.pass"      : "test",
+    "database.prefix"    : "",
+    "rels"               : [
+        {
+            "method": "require",
+            "name"  : "router"
+        },
+        {
+            "method": "require",
+            "name"  : "forms"
+        },
+        {
+            "method": "require",
+            "name"  : "database"
+        },
+        {
+            "method": "require",
+            "name"  : "basic"
+        },
+        {
+            "method": "require",
+            "name"  : "loginAndPass"
+        },
+        {
+            "method": "require",
+            "name"  : "navigationBasic"
+        },
+        {
+            "method": "require",
+            "name"  : "theme"
+        },
+        {
+            "method": "support",
+            "name"  : "xcache"
+        }
+    ]
+}

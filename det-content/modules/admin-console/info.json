@@ -1,0 +1,6 @@
+{
+    "code"   : "admin-console",
+    "version": "1.0",
+    "author" : "detDev",
+    "info"   : "PHP-Консоль для администраторов."
+}

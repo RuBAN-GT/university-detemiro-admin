@@ -1,0 +1,17 @@
+{
+    "code": "api",
+    "config": {
+        "prefix": "api.",
+        "mode"  : "easy-api"
+    },
+    "rels"  : [
+        {
+            "method": "require",
+            "name"  : "cookie-session"
+        },
+        {
+            "method": "require",
+            "name"  : "mode-easy-api"
+        }
+    ]
+}

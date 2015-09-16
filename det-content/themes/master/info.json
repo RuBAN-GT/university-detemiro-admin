@@ -1,0 +1,16 @@
+{
+    "code":    "master",
+    "info":    "Админская панель управления",
+    "version": "1.0",
+    "author":  "detDEV",
+    "rels":    [
+        {
+            "method": "require",
+            "name"  : "admin-jqlibs"
+        },
+        {
+            "method": "support",
+            "name"  : "usersfields"
+        }
+    ]
+}

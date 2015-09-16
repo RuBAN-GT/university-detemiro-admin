@@ -1,0 +1,16 @@
+{
+    "code": "admin",
+    "config": {
+        "mode": "normal"
+    },
+    "rels": [
+        {
+            "method": "require",
+            "name"  : "cookie-session"
+        },
+        {
+            "method": "support",
+            "name"  : "admin-jqlibs"
+        }
+    ]
+}
