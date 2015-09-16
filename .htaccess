@@ -2,12 +2,12 @@ AddDefaultCharset utf-8
 Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine on
-    RewriteBase /det-admin/
+    RewriteBase /
 
     RewriteRule ^index\.php$ - [L]
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
 
-    RewriteRule . /det-admin/index.php [L]
+    RewriteRule . /index.php [L]
 </IfModule>
