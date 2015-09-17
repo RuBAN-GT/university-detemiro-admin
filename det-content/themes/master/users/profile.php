@@ -1,7 +1,3 @@
-<?php
-    detemiro::theme()->incFile('header.php');
-?>
-
 <div class="panel panel-default">
     <div class="panel-heading">Личные данные</div>
     <div class="table-responsive"><table class="table table-striped table-hover">
@@ -35,7 +31,3 @@
         </tr>
     </table></div>
 </div>
-
-<?php
-    detemiro::theme()->incFile('footer.php');
-?>

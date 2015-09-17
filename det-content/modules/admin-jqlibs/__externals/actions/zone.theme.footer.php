@@ -24,7 +24,7 @@
             else {
                 detemiro::messages()->push(array(
                     'status' => 'error',
-                    'type'   => 'jqlibs',
+                    'type'   => 'system',
                     'title'  => 'Ошибка обработчика!',
                     'text'   => 'Для модуля ' . detemiro::modules()->getByPath(__FILE__)->code . ', не выбран обработчик (следует указать в опциях [\'jqlibs\', \'handler\']).'
                 ));

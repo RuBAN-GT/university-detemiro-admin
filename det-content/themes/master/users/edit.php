@@ -1,7 +1,3 @@
-<?php
-    detemiro::theme()->incFile('header.php');
-?>
-
 <div class="panel panel-default">
     <div class="panel-heading">Пользователь</div>
         <div class="panel-body">
@@ -39,7 +35,3 @@
         </form>
     </div>
 </div>
-
-<?php
-    detemiro::theme()->incFile('footer.php');
-?>

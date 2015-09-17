@@ -1,6 +1,7 @@
 <?php
     detemiro::pages()->add(array(
         'title'    => 'Выход',
+        'full'     => true,
         'function' => function() {
             if(detemiro::user()->check) {
                 if(isset($_GET['full']) && $_GET['full']) {

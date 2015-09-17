@@ -1,7 +1,3 @@
-<?php
-    detemiro::theme()->incFile('header.php');
-?>
-
 <div class="row">
     <div class="col-md-8">
         <div class="panel panel-default">
@@ -38,6 +34,49 @@
         </div>
     </div>
 </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Системные сообщения</div>
+    <?php
+        if($det_messages):
+
+        $class = array(
+            1 => 'danger',
+            2 => 'warning',
+            3 => 'success',
+            4 => 'info'
+        );
+    ?>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover" width="100%">
+                <thead>
+                    <th width="200px">Время</th>
+                    <th width="200px">Заголовок</th>
+                    <th>Сообщение</th>
+                </thead>
+                <tbody>
+                    <?php foreach($det_messages as $item): ?>
+                        <tr class="<?=$class[$item->status];?>">
+                            <td><?=date('Y-m-d H:i:s', strtotime($item->date));?></td>
+                            <td><?=$item->title;?></td>
+                            <td><?=$item->text;?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+                <tfoot>
+                    <th>Время</th>
+                    <th>Заголовок</th>
+                    <th>Сообщение</th>
+                </tfoot>
+            </table>
+        </div>
+    <?php else: ?>
+        <div class="panel-body">
+            Detemiro не содержит системных сообщений на данный момент.
+        </div>
+    <?php endif; ?>
+</div>
+
 <div class="panel panel-primary">
     <div class="panel-heading">Задачи</div>
     <?php if($det_issues): ?>
@@ -70,7 +109,3 @@
         </div>
     <?php endif; ?>
 </div>
-
-<?php
-    detemiro::theme()->incFile('footer.php');
-?>

@@ -7,7 +7,7 @@
                 name="<?=$det_name;?>"
                 <?=($det_ignore) ? 'disabled' : '';?>
                 <?=($det_require) ? 'required' : '';?>
-                value="1"
+                value="<?=($det_value) ? $det_value : 1; ?>>"
             > <?=$det_title;?>
             <?=($det_place) ? "($det_place)" : ''; ?>
         </label>

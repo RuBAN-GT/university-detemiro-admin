@@ -3,6 +3,7 @@
         'rules'    => 'admin,moderate-core',
         'title'    => 'О Detemiro',
         'function' => function () {
+            //Получение задач
             $res = null;
 
             if(detemiro::cache()) {
@@ -33,8 +34,9 @@
                 }
             }
 
-            detemiro::theme()->incFile('detemiro/about.php', array(
-                'issues' => $res
+            detemiro::theme()->incFile('detemiro.php', array(
+                'issues'   => $res,
+                'messages' => detemiro::messages()->getType('system')
             ));
         }
     ));

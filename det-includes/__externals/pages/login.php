@@ -1,6 +1,7 @@
 <?php
     detemiro::pages()->set(array(
         'title'    => 'Авторизация',
+        'full'     => true,
         'function' => function($form = null) {
             if($form && $form->count(false)) {
                 detemiro::theme()->incFile('login.php', array(

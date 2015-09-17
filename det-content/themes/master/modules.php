@@ -1,7 +1,3 @@
-<?php
-    detemiro::theme()->incFile('header.php');
-?>
-
 <div role="tabpanel">
     <ul class="nav nav-tabs" role="tablist">
         <li class="active"><a href="#modules-all" role="tab" data-toggle="tab" aria-controls="modules-all">Все модули</a></li>
@@ -89,7 +85,3 @@
         <div class="well">Нет модулей в системе!</div>
     <?php endif; ?>
 </div>
-
-<?php
-    detemiro::theme()->incFile('footer.php');
-?>

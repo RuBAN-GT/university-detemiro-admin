@@ -27,7 +27,7 @@
                     ));
                 }
 
-                detemiro::theme()->incFile('users/profile-fields.php', array(
+                detemiro::theme()->incFile('__templates/profile-fields.php', array(
                     'form' => $form
                 ));
             }
@@ -38,7 +38,7 @@
         'pages'    => 'users-settings',
         'function' => function() {
             if($form = detemiro::registry()->get('theme.userfields.users-settings')) {
-                detemiro::theme()->incFile('users/settings-userfields.php', array(
+                detemiro::theme()->incFile('__templates/settings-userfields.php', array(
                     'form' => $form
                 ));
             }

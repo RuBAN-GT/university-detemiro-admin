@@ -1,7 +1,3 @@
-<?php
-    detemiro::theme()->incFile('header.php');
-?>
-
 <div class="btn-group-responsive">
     <div class="form-group">
         <a href="<?=\detemiro\themes\get_link('users/edit'); ?>" class="btn btn-primary">
@@ -56,7 +52,3 @@
         <p>Это грустно, но это позволяет вам стать первым человеком, который добавил пользователя в эту систему!</p>
     </div>
 <?php endif; ?>
-
-<?php
-    detemiro::theme()->incFile('footer.php');
-?>

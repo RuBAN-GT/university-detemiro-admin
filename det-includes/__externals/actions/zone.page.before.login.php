@@ -49,7 +49,7 @@
                 ),
                 array(
                     'type'       => 'check',
-                    'name'       => 'cookie-session.remember',
+                    'name'       => 'cookie-session-remember',
                     'title'      => 'Запомнить меня',
                     'hideValide' => true,
                     'priority'   => 100,
