@@ -3,7 +3,7 @@
      * Установка общей навигации
      */
 
-    \detemiro::services()->set('navigation', new \detemiro\modules\navigationBasic\nav());
+    \detemiro::services()->set('navigation', new \detemiro\modules\basicNavigation\nav());
 
     \detemiro::navigation()->push(array(
         'code'     => 'index',

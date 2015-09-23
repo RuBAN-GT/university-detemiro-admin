@@ -1,6 +1,6 @@
 {
-    "code"   : "admin-jqlibs",
-    "version": "0.6",
+    "code"   : "admin.jqlibs",
+    "version": "0.7",
     "author" : "detDEV",
     "info"   : "JQ библиотеки для работы с API detemiro модуля easy-api.",
     "rels"   : [

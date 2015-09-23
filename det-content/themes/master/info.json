@@ -6,7 +6,7 @@
     "rels":    [
         {
             "method": "require",
-            "name"  : "admin-jqlibs"
+            "name"  : "admin.jqlibs"
         },
         {
             "method": "support",

@@ -1,5 +1,6 @@
 {
     "inherit"            : false,
+    "easy-api.prefix"    : "api.",
     "cookie-session.life": 2678400,
     "router.ssl"         : true,
     "router.hosts"       : "test.com/det-admin",
@@ -36,7 +37,7 @@
         },
         {
             "method": "require",
-            "name"  : "navigationBasic"
+            "name"  : "basicNavigation"
         },
         {
             "method": "require",

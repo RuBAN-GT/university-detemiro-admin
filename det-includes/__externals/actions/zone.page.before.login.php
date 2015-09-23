@@ -4,17 +4,18 @@
      */
     detemiro::actions()->add(array(
         'priority' => false,
-        'groups'   => '!guests',
         'function' => function() {
-            detemiro::messages()->push(array(
-                'title'  => 'Возвращение на главную',
-                'text'   => 'Вы уже зашли на сайт.',
-                'save'   => 2,
-                'type'   => 'public',
-                'status' => 'info'
-            ));
+            if(detemiro::user()->checkGroups('!guests')) {
+                detemiro::messages()->push(array(
+                    'title'  => 'Возвращение на главную',
+                    'text'   => 'Вы уже зашли на сайт.',
+                    'save'   => 2,
+                    'type'   => 'public',
+                    'status' => 'info'
+                ));
 
-            detemiro::router()->redirectOnPage('index');
+                detemiro::router()->redirectOnPage('index');
+            }
         }
     ));
 

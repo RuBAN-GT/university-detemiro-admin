@@ -11,7 +11,7 @@
         },
         {
             "method": "require",
-            "name"  : "mode-easy-api"
+            "name"  : "mode.easy-api"
         }
     ]
 }

@@ -2,11 +2,9 @@
     detemiro::actions()->add(array(
         'code'     => 'redirectOnLogin',
         'space'    => 'admin',
-        'life'     => 1,
         'priority' => true,
-        'pages'    => '!login',
         'function' => function() {
-            if(detemiro::router()->original != '404') {
+            if(detemiro::router()->page != 'login' && detemiro::router()->original != '404') {
                 if(detemiro::user()->check) {
                     if($page = detemiro::pages()->get(detemiro::router()->page)) {
                         if($page->isAllow() == false) {
