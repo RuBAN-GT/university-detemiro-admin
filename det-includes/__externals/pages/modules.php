@@ -16,15 +16,12 @@
                 'other'     => array(),
             );
 
-            $needed = array_merge(detemiro::space()->rels->data(), detemiro::rels()->data());
-            $reqs   = array(array(), array());
-            foreach($needed as &$item) {
-                if($item['method'] == 'require') {
-                    $reqs[0][] = $item['name'];
-                }
-                elseif($item['method'] == 'support') {
-                    $reqs[1][] = $item['name'];
-                }
+            $reqs = array(array(), array());
+            foreach(detemiro::modules()->relations()->dumpMethod('require') as $item) {
+                $reqs[0][] = $item->name;
+            }
+            foreach(detemiro::modules()->relations()->dumpMethod('support') as $item) {
+                $reqs[1][] = $item->name;
             }
 
             foreach($modules as $item) {

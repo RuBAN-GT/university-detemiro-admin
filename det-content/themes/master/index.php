@@ -16,6 +16,4 @@
     </div>
 </div>
 
-<?php
-    detemiro::pages()->show('detemiro');
-?>
+<?php detemiro::pages()->show('detemiro'); ?>
