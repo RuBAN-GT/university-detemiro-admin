@@ -2,7 +2,7 @@
     "code":    "master",
     "info":    "Админская панель управления",
     "version": "1.0",
-    "author":  "detDEV",
+    "author":  "DetemiroTM",
     "rels":    [
         {
             "method": "require",
