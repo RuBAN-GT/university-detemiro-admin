@@ -1,5 +1,5 @@
 <?php
-    require_once('/home/detuser/detemiro.org/core/detconnect.php');
+    require_once('det-core/detconnect.php');
 
     detemiro::main(array(
         'space' => 'admin'
